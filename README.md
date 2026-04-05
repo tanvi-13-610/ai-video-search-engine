@@ -29,3 +29,5 @@ upload any video and search it using natural language — finds exact frames and
 | frame captioning | salesforce blip-2 |
 | scene detection | pyscenedetect |
 | ui | gradio |
+
+![demo](demo.gif)
