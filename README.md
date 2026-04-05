@@ -1,6 +1,6 @@
-# 🎬 AI Video Search Engine
+# 🎬 ai video search engine
 
-> Search any video by what you **see** AND what you **hear** — powered by CLIP · FAISS · Whisper · BLIP-2 · PySceneDetect
+> search any video by what you **see** and what you **hear** — powered by clip · faiss · whisper · blip-2 · pyscenedetect
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-orange?style=flat&logo=pytorch)
@@ -9,35 +9,35 @@
 
 ---
 
-## 🚀 Live Demo
-🔗 [Open in Google Colab](https://colab.research.google.com/github/tanvi-13-610/ai-video-search-engine/blob/main/ai_video_search_engine.ipynb)
+## 🚀 live demo
+🔗 [open in google colab](https://colab.research.google.com/github/tanvi-13-610/ai-video-search-engine/blob/main/ai_video_search_engine.ipynb)
 
 ---
 
-## 📌 What it does
-Upload any video and search it using natural language — finds exact frames and spoken moments matching your query across multiple videos simultaneously.
+## 📌 what it does
+upload any video and search it using natural language — finds exact frames and spoken moments matching your query across multiple videos simultaneously.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 tech stack
 
-| Component | Tool |
+| component | tool |
 |---|---|
-| Visual Embeddings | OpenAI CLIP (ViT-B/32) |
-| Vector Search | FAISS |
-| Audio Transcription | OpenAI Whisper |
-| Frame Captioning | Salesforce BLIP-2 |
-| Scene Detection | PySceneDetect |
-| UI | Gradio |
+| visual embeddings | openai clip (vit-b/32) |
+| vector search | faiss |
+| audio transcription | openai whisper |
+| frame captioning | salesforce blip-2 |
+| scene detection | pyscenedetect |
+| ui | gradio |
 
 ---
 
-## 🚀 How to Run
-1. Open notebook in Colab → set runtime to **T4 GPU**
-2. Run all cells
-3. Use the Gradio UI to upload a video and search
+## 🚀 how to run
+1. open notebook in colab → set runtime to **t4 gpu**
+2. run all cells
+3. use the gradio ui to upload a video and search
 
 ---
 
-## 🙋 Author
-**Tanvi** — [github.com/tanvi-13-610](https://github.com/tanvi-13-610)
+## 🙋 author
+**tanvi** — [github.com/tanvi-13-610](https://github.com/tanvi-13-610)
