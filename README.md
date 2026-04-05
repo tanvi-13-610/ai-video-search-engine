@@ -23,6 +23,20 @@ Upload any video and search it using natural language — the system finds the e
 ---
 
 ## 🏗 Architecture
+Video Input (any .mp4)
+↓
+PySceneDetect → Smart frame extraction (77% fewer frames than 1fps)
+↓
+CLIP (ViT-B/32) → 512-dim embedding per frame
+↓
+FAISS IndexFlatIP → Sub-second vector similarity search
+↓
+Whisper (small) → Full audio transcription with timestamps
+↓
+BLIP-2 (OPT-2.7B) → Natural language caption per matched frame
+↓
+Gradio UI → Visual matches + Audio matches + Confidence scores
+
 ---
 
 ## ✨ Features
@@ -85,7 +99,11 @@ Upload any video and search it using natural language — the system finds the e
 ---
 
 ## 📁 Project Structure
+ai-video-search-engine/
+├── ai_video_search_engine.ipynb   # Full pipeline notebook
+└── README.md
+
 ---
 
 ## 🙋 Author
-**Tanvi** — [github.com/tanvi-13-610](https://github.com/tanvi-13-610)
+**Tanvi** — [github.com/tanvi-13-610](https://github.com/tanvi-13-610)Sonnet 4.6
