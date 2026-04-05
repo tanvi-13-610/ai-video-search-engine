@@ -15,20 +15,7 @@
 ---
 
 ## 📌 What it does
-Upload any video and search it using natural language — the system finds the exact frames and spoken moments that match your query.
-
-**Example:** Search `"neural networks"` across a 2.5 hour lecture → instantly returns the exact timestamp where neural networks appear on screen AND where the word is spoken.
-
----
-
-## ✨ Features
-- 🔍 **Natural language visual search** — Find any scene by describing it
-- 🎤 **Audio search** — Search spoken words with Whisper transcription
-- 📝 **AI captions** — BLIP-2 generates descriptions for every matched frame
-- 🟢 **Confidence scoring** — High / Medium / Low match confidence per result
-- 📚 **Multi-video library** — Index and search across multiple videos at once
-- 🎬 **Scene-aware sampling** — PySceneDetect extracts only meaningful frames
-- ⚡ **571 frames/sec** — Sub-second retrieval across 4 AI models simultaneously
+Upload any video and search it using natural language — finds exact frames and spoken moments matching your query across multiple videos simultaneously.
 
 ---
 
@@ -36,30 +23,19 @@ Upload any video and search it using natural language — the system finds the e
 
 | Component | Tool |
 |---|---|
-| Frame Extraction | OpenCV + FFmpeg |
-| Scene Detection | PySceneDetect |
 | Visual Embeddings | OpenAI CLIP (ViT-B/32) |
-| Vector Search | FAISS (IndexFlatIP) |
-| Audio Transcription | OpenAI Whisper (small) |
-| Frame Captioning | Salesforce BLIP-2 (OPT-2.7B) |
+| Vector Search | FAISS |
+| Audio Transcription | OpenAI Whisper |
+| Frame Captioning | Salesforce BLIP-2 |
+| Scene Detection | PySceneDetect |
 | UI | Gradio |
-| Runtime | Google Colab (T4 GPU) |
 
 ---
 
 ## 🚀 How to Run
-1. Open the notebook in Google Colab (link above)
-2. Set runtime to **T4 GPU**: `Runtime → Change runtime type → T4 GPU`
-3. Run all cells top to bottom
-4. Use the Gradio UI to upload a video and start searching
-
----
-
-## 📝 Resume Bullets
-- Built a **multimodal AI video search engine** combining CLIP, FAISS, Whisper, and BLIP-2 — enabling natural language search across both visual and audio content of any video
-- Engineered a **scene-aware frame sampling pipeline** using PySceneDetect, reducing indexed frames by 77% while preserving semantic coverage
-- Achieved **571 frames/second** retrieval across a 4-model AI pipeline with sub-second end-to-end search latency
-- Deployed as a **live Gradio web app** supporting multi-video library search, CSV export, confidence scoring, and AI-generated frame captions
+1. Open notebook in Colab → set runtime to **T4 GPU**
+2. Run all cells
+3. Use the Gradio UI to upload a video and search
 
 ---
 
