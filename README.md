@@ -30,3 +30,4 @@ upload any video and search it using natural language — finds exact frames and
 | scene detection | pyscenedetect |
 | ui | gradio |
 
+![demo](demo.gif)
