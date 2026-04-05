@@ -29,15 +29,3 @@ upload any video and search it using natural language — finds exact frames and
 | frame captioning | salesforce blip-2 |
 | scene detection | pyscenedetect |
 | ui | gradio |
-
----
-
-## 🚀 how to run
-1. open notebook in colab → set runtime to **t4 gpu**
-2. run all cells
-3. use the gradio ui to upload a video and search
-
----
-
-## 🙋 author
-**tanvi** — [github.com/tanvi-13-610](https://github.com/tanvi-13-610)
